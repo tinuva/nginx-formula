@@ -2,6 +2,17 @@
 Debian:
   pkgs: {}
   service: {}
+  user: www-data
   vhosts:
     dir: /etc/nginx/sites-available
+  ssl:
+    dir: /etc/nginx
+RedHat:
+  pkgs: {}
+  service: {}
+  user: nginx
+  vhosts:
+    dir: /etc/nginx/sites-available
+  ssl:
+    dir: /etc/nginx
 {% endload %}
